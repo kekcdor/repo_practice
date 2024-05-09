@@ -1,10 +1,10 @@
 version: 2.1
 jobs:
- build:
- working_directory: ~/project
- docker:
- - image: circleci/openjdk:17-jdk-buster
- steps:
- - checkout
- - run: mvn -U clean install -DskipTests
- - run: mvn test
+  build:
+    working_directory: ~/project
+    docker:
+      - image: circleci/openjdk:17-jdk-buster
+    steps:
+      - checkout
+      - run: mvn -U clean install -DskipTests
+      - run: mvn test
