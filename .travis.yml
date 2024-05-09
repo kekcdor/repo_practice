@@ -1,0 +1,28 @@
+language: java
+
+sudo: false
+install: true
+addons:
+  sonarcloud:
+    organization: kekcdor
+
+jdk:
+  - openjdk-17
+
+# Для Coveralls
+script:
+  - mvn clean install
+
+after_success:
+  - mvn clean test jacoco:report coveralls:report
+
+# Для SonarCube
+#script:
+#  - mvn clean install sonar:sonar -Dsonar.projectKey=kekcdor_repo_practice
+
+notifications:
+  email:
+    recipients:
+      - musortm@yandex.ru
+    on_success: always
+    on_failure: always
