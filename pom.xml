@@ -15,22 +15,12 @@
     <description>demo</description>
     <properties>
         <java.version>19</java.version>
-        <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
-        <sonar.language>java</sonar.language>
-        <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
-        <sonar.coverage.jacoco.xmlReportPaths>${basedir}/target/site/jacoco/jacoco.xml
-        </sonar.coverage.jacoco.xmlReportPaths>
-
         <maven.compiler.source>19</maven.compiler.source>
         <maven.compiler.target>19</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.organization>kekcdor</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 
-        <sonar.java.binaries>${basedir}/target/classes</sonar.java.binaries>
-        <sonar.sources>${basedir}/src/main</sonar.sources>
-        <maven.compiler.source>19</maven.compiler.source>
-        <maven.compiler.target>19</maven.compiler.target>
     </properties>
 
     <dependencies>
