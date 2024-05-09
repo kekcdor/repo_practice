@@ -14,15 +14,15 @@
     <name>demo</name>
     <description>demo</description>
     <properties>
-        <java.version>17</java.version>
+        <java.version>19</java.version>
         <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
         <sonar.language>java</sonar.language>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.coverage.jacoco.xmlReportPaths>${basedir}/target/site/jacoco/jacoco.xml
         </sonar.coverage.jacoco.xmlReportPaths>
 
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.organization>kekcdor</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
@@ -30,8 +30,8 @@
         <sonar.java.binaries>${basedir}/target/classes</sonar.java.binaries>
         <sonar.tests>${basedir}/src/test</sonar.tests>
         <sonar.sources>${basedir}/src/main</sonar.sources>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -82,12 +82,6 @@
 
     <build>
         <plugins>
-
-            <plugin>
-                <groupId>org.sonarsource.scanner.maven</groupId>
-                <artifactId>sonar-maven-plugin</artifactId>
-                <version>3.9.0.2155</version>
-            </plugin>
 
             <plugin>
                 <groupId>com.github.hazendaz.maven</groupId>

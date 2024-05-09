@@ -7,7 +7,7 @@ addons:
     organization: kekcdor
 
 jdk:
-  - openjdk-17
+  - openjdk-19
 
 # Для Coveralls
 script:
